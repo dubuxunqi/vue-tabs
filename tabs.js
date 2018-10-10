@@ -85,9 +85,11 @@ Vue.component('tabs',{
         }
     },
     watch:{
+        // 监听value变化
         value:function(val){
             this.currentValue = val;
         },
+        // 监听currentValue变化，更新对应的pane组件
         currentValue:function(){
             this.updateStatus();
         }

@@ -7,6 +7,7 @@
 </head>
 <body>
     <div id="app" v-cloak>
+        <!-- @input接收子组件传来的name -->
         <tabs v-model="value" @input="tabData">
             <pane label="标签一" name="1">
                 标签一的内容
